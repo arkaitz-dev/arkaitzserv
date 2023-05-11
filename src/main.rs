@@ -1,4 +1,4 @@
-//! ### Spaserver
+//! ### Arkaitzserv
 //! 
 //! As the name suggests, it's a lightweight web server aimed at serving SPA web pages.
 //! It simply performs a redirection of any URL (relative to your domain, of course) to

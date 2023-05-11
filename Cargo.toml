@@ -1,5 +1,5 @@
 [package]
-name = "spaserver"
+name = "arkaitzserv"
 version = "0.1.0"
 edition = "2021"
 authors = ["Arkaitz <me@arkaitz.dev>"]

@@ -1,4 +1,4 @@
-### Spa server
+### Arkaitzserv
 
 This is a lightweight web server entirely writen in Rust, using Rocket framework.
 
@@ -6,6 +6,6 @@ This is a lightweight web server entirely writen in Rust, using Rocket framework
 
 If you have Rust installed, at least v1.69, just run the following command:
 
-cargo install spaserver
+cargo install arkaitzserv
 
 Please, refer to crates.io for further information.
