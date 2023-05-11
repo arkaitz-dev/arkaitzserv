@@ -2,7 +2,13 @@
 name = "spaserver"
 version = "0.1.0"
 edition = "2021"
-
+authors = ["Arkaitz <me@arkaitz.dev>"]
+rust-version = "1.69"
+description = "A lightweight web server intended for SPA deployments."
+repository = "https://github.com/arkaitz-dev/spaserver"
+license = "MIT"
+keywords = ["web", "server", "spa", "rocket"]
+exclude = ["public/", "target"]
 
 [dependencies]
 rocket = "0.5.0-rc.3"
