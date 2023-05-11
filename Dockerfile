@@ -29,6 +29,10 @@ RUN cargo build --release
 ####################################################################################################
 FROM gcr.io/distroless/cc
 
+ENV ROOT_DIR
+ENV API_URL
+ENV ASSETS_DIR
+
 # Import from builder.
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
@@ -40,11 +44,5 @@ COPY --from=builder /target/release/arkaitzserv ./
 
 # Use an unprivileged user.
 USER arkaitzserv:arkaitzserv
-
-RUN mkdir /public && chown arkaitzserv:arkaitzserv /public
-
-ARG ROOT_DIR
-ARG API_URL
-ARG ASSETS_DIR
 
 CMD ["/arkaitzserv"]
