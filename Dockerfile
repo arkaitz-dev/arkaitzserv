@@ -29,10 +29,6 @@ RUN cargo build --release
 ####################################################################################################
 FROM gcr.io/distroless/cc
 
-ENV ROOT_DIR
-ENV API_URL
-ENV ASSETS_DIR
-
 # Import from builder.
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
