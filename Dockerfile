@@ -29,6 +29,8 @@ RUN cargo build --release
 ####################################################################################################
 FROM gcr.io/distroless/cc
 
+EXPOSE 8000
+
 # Import from builder.
 COPY --from=builder /etc/passwd /etc/passwd
 COPY --from=builder /etc/group /etc/group
