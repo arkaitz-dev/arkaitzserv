@@ -29,6 +29,7 @@ RUN cargo build --release
 ####################################################################################################
 FROM gcr.io/distroless/cc
 
+ENV ROCKET_ADDRESS=0.0.0.0
 EXPOSE 8000
 
 # Import from builder.
